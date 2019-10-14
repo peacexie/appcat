@@ -1,0 +1,249 @@
+{
+    "pages": [{
+            "path": "pages/index/home",
+            "style": {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "Imcat•全端猫",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [{
+                            // #ifdef H5
+                            "text": "\ue534",
+                            "fontSrc": "https://img-cdn-qiniu.dcloud.net.cn/fonts/uni.ttf",
+                            // #endif
+                            // #ifdef APP-PLUS || MP
+                            "text": ">",
+                            // #endif
+                            "fontSize": "48upx",
+                            "color": "#999999"
+                        }]
+                    }
+                }            
+            }
+        }, {
+            "path": "pages/index/about",
+            "style": {
+                "navigationBarTitleText": "(about)系统介绍•更新"
+            }
+        /*}, {
+            "path": "pages/index/mpub", // mpub
+            "style": {
+                "navigationBarTitleText": "(diy)多端发布"
+            }*/
+        }, {
+            "path": "pages/index/sinfo",
+            "style": {
+                "navigationBarTitleText": "(sinfo)系统调试信息"
+            }
+        }, {
+            "path": "pages/index/read",
+            "style": {
+                "navigationBarTitleText": "加载中..."
+            }
+        }, {
+            "path": "pages/index/webv",
+            "style": {
+                "navigationBarTitleText": "页面浏览"
+            }
+        /* news */
+        }, {
+            "path": "pages/news/home",
+            "style": {
+                "navigationBarTitleText": "新闻首页"
+            }
+        }, {
+            "path": "pages/news/list",
+            "style": {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "新闻列表"
+            }
+        }, {
+            "path": "pages/news/view",
+            "style": {
+                "navigationBarTitleText": "新闻详情",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [{
+                            "type": "home",
+                            "color": "#999999"
+                        }]
+                    }
+                }
+            }
+        /* blog */
+        }, {
+            "path": "pages/blog/home",
+            "style": {
+                "navigationBarTitleText": "和平鸽博客"
+            }
+        }, {
+            "path": "pages/blog/list",
+            "style": {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "博文列表"
+            }
+        }, {
+            "path": "pages/blog/wall",
+            "style": {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "便笺墙"
+            }
+        }, {
+            "path": "pages/blog/view",
+            "style": {
+                "navigationBarTitleText": "博文详情",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [{
+                            "type": "home",
+                            "color": "#999999"
+                        }]
+                    }
+                }
+            }
+        /* pro */    
+        }, {
+            "path": "pages/pro/home",
+            "style": {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "产品首页"
+            }
+        }, {
+            "path": "pages/pro/view",
+            "style": {
+                "navigationBarTitleText": "产品详情",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [{
+                            "type": "home",
+                            "color": "#999999"
+                        }]
+                    }
+                }
+            }
+        /* faqs */    
+        }, {
+            "path": "pages/faqs/home",
+            "style": {
+                "navigationBarTitleText": "问答首页"
+            }
+        }, {
+            "path": "pages/faqs/list",
+            "style": {
+                "navigationBarTitleText": "问答列表"
+            }
+        }, {
+            "path": "pages/faqs/view",
+            "style": {
+                "navigationBarTitleText": "问答详情",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [{
+                            "type": "home",
+                            "color": "#999999"
+                        }]
+                    }
+                }
+            }
+        /* user */   
+        }, {
+            "path": "pages/user/home",
+            "style": {
+                "navigationBarTitleText": "用户中心"
+            }
+        }, {
+            "path": "pages/user/login",
+            "style": {
+                "navigationBarTitleText": "登录用户"
+            }
+        }, {
+            "path": "pages/user/reg",
+            "style": {
+                "navigationBarTitleText": "注册新用户"
+            }
+        }, {
+            "path": "pages/user/getpw",
+            "style": {
+                "navigationBarTitleText": "取回密码"
+            }    
+        }, {
+            "path": "pages/demo/less",
+            "style": {
+                "navigationBarTitleText": "Less测试"
+            }
+        /* demo */ 
+        }, {
+            "path": "pages/demo/md",
+            "style": {
+                "navigationBarTitleText": "MarkDown"
+            }
+        }, {
+            "path": "pages/demo/html",
+            "style": {
+                "navigationBarTitleText": "Html"
+            }
+        }, {
+            "path": "pages/demo/qrcode",
+            "style": {
+                "navigationBarTitleText": "Qrcode"
+            }
+        }, {
+            "path": "pages/demo/list",
+            "style": {
+                "navigationBarTitleText": "News-List"
+            }
+        }, {
+            "path": "pages/demo/index",
+            "style": {
+                "navigationBarTitleText": "Uni-Index"
+            }
+        }/*, {
+            "path": "pages/extUI/badge/badge",
+            "style": {
+                "navigationBarTitleText": "Badge 数字角标"
+            }
+        }*/
+        
+    ],
+    
+    "globalStyle": {
+        "navigationBarTextStyle": "black", // black/white
+        "navigationBarTitleText": "Hi-Cats",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8",
+        "backgroundColorTop": "#F4F5F6", // 仅 iOS 平台
+        "backgroundColorBottom": "#F4F5F6", // 仅 iOS 平台
+        "mp-alipay": {
+            "titleBarColor": "#FFFFFF"
+        }
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#007AFF",
+        "borderStyle": "black",
+        "backgroundColor": "#F8F8F8",
+        "list": [{
+                "pagePath": "pages/index/home",
+                "iconPath": "static/icob/nav-home.png",
+                "selectedIconPath": "static/icob/nav-home-cur.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/blog/home",
+                "iconPath": "static/icob/nav-ge.png",
+                "selectedIconPath": "static/icob/nav-ge-cur.png",
+                "text": "和平鸽"
+            },
+            {
+                "pagePath": "pages/user/home",
+                "iconPath": "static/icob/nav-user.png",
+                "selectedIconPath": "static/icob/nav-user-cur.png",
+                "text": "我的"
+            }
+        ]
+    }    
+}
+
+/*
+
+*/

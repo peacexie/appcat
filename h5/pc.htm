@@ -1,0 +1,212 @@
+﻿<!doctype html>
+<html>
+<head>
+<script>  
+function goauto() {
+  var UA = navigator.userAgent.toLowerCase();
+  var isMob = /iphone|ipad|ipod|ios|android/.test(UA);
+  //if(isMob) {location.href = '/h5/';}
+};
+goauto();
+window.addEventListener('resize', function(){
+  setTimeout(function(){goauto()}, 500);
+});
+</script>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'>
+<link rel='shortcut icon' href='//imcat.txjia.com/views/base/assets/logo/favicon.ico' />
+<script src='https://imcat.txjia.com/ximps/vendui/jquery/jquery-2.x.js'></script>
+<!--link href='//imcat.txjia.com/ximps/vendui/bootstrap/css/font-awesome.min.css' type='text/css' rel='stylesheet'/-->
+<link href='https://imcat.txjia.com/views/base/home/style.css' type='text/css' rel='stylesheet'/>
+
+<title>Imcat•全端猫</title>
+<meta name='keywords' content='Imcat,全端猫,App,小程序,Wap'>
+<meta name='description' content='Imcat•全端猫` 是 `贴心猫`后端 + `uni-app` 前端 开发的一套 移动端全端源码；简约、轻量、实用、免费、共享。'>
+
+<base target="_blank"/>
+<style type="">
+.outnp{ max-width:720px; margin:1rem auto 1rem auto; }
+.navp3{ display:flex; text-align:center;  }
+.navp3 li{ width:33%; font-size:large; cursor:pointer; list-style:none; padding:0.5rem; 
+	border-bottom:1px solid #999; border-left:1px solid #DDD; }
+.navp3 li:first-child{ border-left:0px; }  
+.navp3 li.act{ cursor:default; border-bottom:2px solid #69F; }
+.navp3 li.dis{ cursor:help; color:#999; border-bottom:1px solid #DDD; }
+.onep{ text-align:center; padding:1rem; }
+.onep li{ list-style:none; display:inline-block; padding:1rem; }
+.onep img{ max-width:240px; max-height:240px; }
+.pics{ display:flex; }
+.rem, .rem2{ text-align:left; color:#F00; font-size:small; }
+.rem2{ color:#666; }
+.pics .pic1{ width:33%; padding:0.5rem; }
+.title{ font-size:large; font-weight:bold; padding:0.5rem; border-bottom:1px solid #DDD; }
+.tsub{ font-size:large; font-weight:bold; padding:0 0.5rem; margin:0; text-align:left; }
+@media only screen and (max-width:480px){
+    .gap{ display:none !important; }
+} 
+.foot{ max-width:720px; background:#EEE; padding:1rem 0; margin:1rem auto 1rem auto; border-top:1px solid #CCC; }
+</style>
+</head>
+<body>
+
+<!--[if lt IE 9]>
+<p class='gwidth ie6'>浏览器版本太低，不支持HTML5，浏览效果可能不正常！</p>
+<![endif]-->
+<!--https://m3w.cn/uniapp-->
+
+<div class="head">
+    <a href="?" target="_self"><img src="http://imcat.txjia.com/h5/logo/logo-3p.png" width="100"></a>
+    <p class="gap">&nbsp;</p>
+    <h1>
+        <a href="http://imcat.txjia.com">Imcat</a>•全端猫 </h1>
+    <p>`App-M*p-Wap`多合一</p>
+</div>
+
+<div class="clear"></div>
+
+<div class="outnp">
+
+  <nav class="navp3">
+    <li class="act" title="Wap">Wap</li>
+    <li class="" title="微信小程序，支付宝小程序，百度小程序，头条小程序">小程序</li>
+    <li class="" title="App">App</li>
+    <li class="" title="呐喊">呐喊?</li>
+  </nav>
+
+  <div class="onep" style="display:block">
+    <img class="barcode-image" src="./pc/h5-217.png" alt="二维码(wap)">
+    <div class="list">
+      <p class="list-cell">扫描上方二维码预览，请使用手机浏览。</p>
+      <p class="list-cell">H5地址：<a href="http://imcat.txjia.com/h5/" target="_self">http://imcat.txjia.com/h5/</a> 。</p>
+      <p class="list-cell">PC浏览器，请打开控制台并切换至手机模式后再次点击链接。</p>
+      <p class="rem2">部分页面打不开(已解决)：因为主体页是https，打开的页面是 http页面，浏览器默认的安全设置不允许打开；
+      </p>
+    </div>
+  </div>
+
+  <div class="onep" style="display:none">
+    <div>
+      <p class="tsub">微信小程序</p>
+      <li>
+        <img class="barcode-image" src="./pc/mp-wx.png" alt="二维码(wx)">
+        <br>(随时修改中-较新)
+      </li>
+      <li>
+        <img class="barcode-image" src="./pc/mp-wx.jpg" alt="二维码(wx)">
+        <br>(稳定-较旧)
+      </li>
+      <p class="rem">
+        部分外部页面错误信息：“不支持打开非业务域名请重新配置"；
+        因另个人号不允许设置业务域名导致。
+      </p>
+    </div>
+    <div>
+      <p class="tsub">百度小程序</p>
+      <p class="rem">
+        百度小程序：本地已经调试好；<br>
+        但是个人身份申请不到appid，不能发布？！...
+      </p>
+    </div>
+    <div>
+      <p class="tsub">支付宝小程序</p>
+      <p class="rem">
+        支付宝小程序：本地已经调试好；<br>
+        appid申请中...
+      </p>
+    </div>
+  </div>
+
+  <div class="onep" style="display:none">
+    <li>
+      <img class="barcode-image" src="./pc/app-apk.png" alt="二维码(apk)">
+      <br><a href="./pc/app.apk">for Android(公共证书)</a>
+    </li>  
+    <li>
+      <img class="barcode-image" src="./pc/app-ipa.png" alt="二维码(ipa)">
+      <br><a href="./pc/app.ipa">for Apple(越狱包)</a>
+    </li>
+    <p class="rem">因未上架到应用商店；如不能扫码下载，请点击文字链接，用浏览器打开下载...</p>
+  </div>
+
+  <div class="onep" style="display:none">
+
+    <div>
+      <p class="tsub"><b>申明（部分已解决）：</b></p>
+      <p class="rem2">
+        以上各红色文字提示，并非我`人品`与`技术`问题！<br>
+        1. 要么是手头紧，资金问题：如花钱买https证书，花钱买（升级）服务器…<br>
+        2. 要么是身份卑微，是个人身份而非企业：如“个人(微信小程序)号不允许设置业务域名”…<br>
+        3. 要么是时间精力折腾问题：如等待审核...<br>
+      </p>
+    </div>
+    <div>
+      <p class="tsub">源码与发布 (DIY)</p>
+      <p class="rem2">
+        Github下载：<a href="https://github.com/peacexie/imcat" target="_blank">/peacexie/imcat</a>；
+        部署参考文档：<a href="https://uniapp.dcloud.io/" target="_blank">Uni-app</a>；<br>
+        自行下载,参考文档申请替换相关appid/appkey等配置；自替换图标和服务端配置`/common/cfgs.js`；自定上传打包上架应用…
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="clear"></div>
+
+<div class="outnp">
+  <p class="title">应用介绍：</p>
+  <p>贴心猫(imcat) 是一款PHP+MySQL架构设计的通用网站系统，简约、轻量、实用、免费、共享；介于框架与CMS之间，也是一个实用的php工具包。</p>
+  <p>uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码，可编译到iOS、Android、H5、以及各种小程序等多个平台。</p>
+  <p>`Imcat•全端猫` 是 `贴心猫`后端 + `uni-app` 前端 开发的一套 移动端全端源码；同样是：简约、轻量、实用、免费、共享。</p>
+</div>
+
+<div class="clear"></div>
+
+<div class="outnp">
+  <p class="title">应用截图：(点击放大)</p>
+  <div class="pics">
+    <div class="pic1"><img src="./pc/cut-home.png" width="100%"></div>
+    <div class="pic1"><img src="./pc/cut-peace.png" width="100%"></div>
+    <div class="pic1"><img src="./pc/cut-me.png" width="100%"></div>
+  </div>
+</div>
+
+<div class="foot">
+
+<p>
+    Imcat•全端猫 @ 
+    <a href='http://imcat.txjia.com/' target='_self'>贴心猫</a>
+</p>
+</div>
+
+<script src='https://imcat.txjia.com/views/base/assets/jslib/picPlay.js'></script>
+<script>
+
+$(function(){ 
+
+$('.pics').picView();
+
+$('.navp3 li').each(function(i1, e1) {
+	$(e1).click(function(){ 
+		if($(e1).hasClass('dis')) return false;
+    $('.onep').hide();
+    $('.onep').eq(i1).show();
+    $('.navp3 li').removeClass('act');
+    $(e1).addClass('act');        
+	});
+});
+
+_ismb = '';
+if(_ismb){
+    //$('.vnote p').hide();
+    //$('.foot span').hide();
+}else{
+    //qrActs();
+}
+});
+</script>
+
+</body>
+</html>
