@@ -18,4 +18,4 @@ Uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 
 ---
 
-[Demo-App|小程序|Wap](https://imcat.txjia.com/h5/pc.htm)
+[Demo:App|小程序|Wap](https://imcat.txjia.com/h5/pc.htm)
