@@ -18,7 +18,7 @@
 <script>
     
     import incNews1 from '@/components/incs/incNews1.vue'
-    import {uniLoadMore} from '@dcloudio/uni-ui' // uniIcon,
+    import uniLoadMore from '@/components/uniui/lib/uni-load-more/uni-load-more'
     
     export default {
         components: {

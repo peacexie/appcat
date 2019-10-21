@@ -59,22 +59,27 @@
         </view>
         
         <fab-Nav/>
+        <share-pop :shareShow="shareShow" :shareParams="shareParams" isCallback="1" @hidePopup="closePop"></share-pop>
     </view>
 </template>
 
 <script>
 
-    import {uniList,uniListItem,uniGrid} from '@dcloudio/uni-ui'
+    import uniList     from '@/components/uniui/lib/uni-list/uni-list'
+    import uniListItem from '@/components/uniui/lib/uni-list-item/uni-list-item'
+    import uniGrid     from '@/components/uniui/lib/uni-grid/uni-grid'
+    
     import uParse from 'gaoyia-parse';
     import incPro1 from '@/components/incs/incPro1.vue'
     import fabNav from '@/components/tool/fabNav'
-    import {uniLoadMore} from '@dcloudio/uni-ui' // uniIcon,
+    import sharePop from '@/components/tool/sharePop'
+    import uniLoadMore from '@/components/uniui/lib/uni-load-more/uni-load-more' // uniIcon,
     
     export default {
         components: {
             uniList, uniListItem, uniGrid,
             uParse, incPro1, 
-            fabNav, uniLoadMore
+            fabNav, sharePop, uniLoadMore
         },
         data() {
             return {
@@ -92,6 +97,9 @@
                 loadMsgs: { //加载的内容
                 	contentrefresh: '加载中'
                 },
+                shareShow: false,
+                shareStatus: false,
+                shareParams: {},//分享对象
                 loading: '1',
                 status: 'loading',
                 ermsg: '', // 加载中...
@@ -99,13 +107,24 @@
             };
         },
         onNavigationBarButtonTap(e) {
-            this.$tool.tab();
+            this.shareOpen(); 
         },
         onLoad(cfg) {
             this.did = cfg.did;
             this.loadData();
         },
         methods: {
+            
+            closePop() {
+            	this.shareShow = false;
+            },
+            closeShare(){
+            	this.shareStatus = false;
+            },
+            shareOpen() {
+                this.shareShow = true;
+            },
+            
             goRow(row, mod) { 
                 uni.navigateTo({
                     url: '/pages/'+mod+'/view?did='+row.did
@@ -127,6 +146,11 @@
                         {key:'end', val:1}
                     ]
                     this.detail = row.detail ? row.detail : '';
+                    this.shareParams = {
+                    	title: row.title,
+                    	//thumb: res.data.row.mpic,
+                    	link: 'pro/view?did='+row.did
+                    };
                 }).catch((err)=>{
                     console.log('request fail', err)
                 })   

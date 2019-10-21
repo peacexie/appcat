@@ -24,8 +24,6 @@
 	@import url('./static/3rd/uni.css');
     @import url('./static/3rd/wxParse.css');
     /*
-	@import url('./static/3rd/uni.css');
-    @import url("./static/3rd/wxParse.css");
     @import url('http://imcat.txjia.com/h5/3rd/uni.css');
     @import url('http://imcat.txjia.com/h5/3rd/wxParse.css');
     */

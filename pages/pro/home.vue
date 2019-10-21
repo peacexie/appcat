@@ -37,7 +37,7 @@
 <script>
 	
     import incPro1 from '@/components/incs/incPro1'
-    import {uniLoadMore} from '@dcloudio/uni-ui'
+    import uniLoadMore from '@/components/uniui/lib/uni-load-more/uni-load-more'
 	
 	export default{
         components:{

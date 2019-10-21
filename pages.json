@@ -64,7 +64,7 @@
                 "app-plus": {
                     "titleNView": {
                         "buttons": [{
-                            "type": "home",
+                            "type": "share",
                             "color": "#999999"
                         }]
                     }
@@ -95,7 +95,7 @@
                 "app-plus": {
                     "titleNView": {
                         "buttons": [{
-                            "type": "home",
+                            "type": "share",
                             "color": "#999999"
                         }]
                     }
@@ -115,7 +115,7 @@
                 "app-plus": {
                     "titleNView": {
                         "buttons": [{
-                            "type": "home",
+                            "type": "share",
                             "color": "#999999"
                         }]
                     }

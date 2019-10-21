@@ -26,7 +26,7 @@
                 <image :src="$tool.vpic(['h5','icob/ex-jian.png'])"></image>
                 <text>至简生活</text>
             </view>
-            <view class="myToolBox" @tap="$tool.go('url=https://imblog.txjia.com:8443/home.php?ftree&title=家族树')">
+            <view class="myToolBox" @tap="$tool.go('url=https://imblog.txjia.com:8443/home.php/ftree&title=家族树')">
                 <image :src="$tool.vpic(['h5','icob/ex-shu.png'])"></image>
                 <text>家族树</text>
             </view>
@@ -76,8 +76,11 @@
 
 <script>
     
-    import {uniList,uniListItem,uniGrid} from '@dcloudio/uni-ui'
-    import {mapState,mapMutations} from 'vuex'
+    import uniList     from '@/components/uniui/lib/uni-list/uni-list' 
+    import uniListItem from '@/components/uniui/lib/uni-list-item/uni-list-item'
+    import uniGrid     from '@/components/uniui/lib/uni-grid/uni-grid'
+    
+    import {mapState,mapMutations} from 'vuex'  
     
     export default {
         components: {

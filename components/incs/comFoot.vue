@@ -1,7 +1,7 @@
 <template name="page-foot">
 	<view class="page-share-title">
 		<text class="submit" @tap="submit">贴心猫(imcat)</text>
-        <text>©2016和平鸽</text>
+        <text>©2019和平鸽</text>
 	</view>
 </template>
 

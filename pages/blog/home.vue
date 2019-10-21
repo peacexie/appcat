@@ -52,9 +52,9 @@
 
 <script>
     
-    import {uniIcon} from '@dcloudio/uni-ui' // uniIcon,
-    import incBlog from '@/components/incs/incBlog.vue'
-    import {uniLoadMore} from '@dcloudio/uni-ui' // uniIcon,
+    import uniIcon from '@/components/uniui/lib/uni-icon/uni-icon'
+    import uniLoadMore from '@/components/uniui/lib/uni-load-more/uni-load-more'
+    import incBlog from '@/components/incs/incBlog.vue' 
     
     export default {
         components: {

@@ -149,5 +149,9 @@
     "mp-alipay" : {
         // appid=2019101468375489
         "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "appid" : "17526889",
+        "usingComponents" : true
     }
 }

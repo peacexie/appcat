@@ -75,7 +75,7 @@
 		},
 		methods: {
 			/* getCode(){
-				this.yzmSrc = 'http://imcat.txjia.com/umc.php';
+				this.yzmSrc = 'http://user.fzg360.com/index.php?m=site&a=getCaptcha';
 			},
 			chageCode(){
 				uni.redirectTo({

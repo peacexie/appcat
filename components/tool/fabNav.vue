@@ -51,7 +51,7 @@
 		},
 		methods: {
 			trigger(e) {
-				this.content[e.index].active = !e.item.active;
+				//this.content[e.index].active = !e.item.active;
                 let path = this.content[e.index].path;
                 if(!path){
                     uni.navigateBack();

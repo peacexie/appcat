@@ -18,7 +18,7 @@
 <script>
     
     import incFaqs1 from '@/components/incs/incFaqs1.vue'
-    import {uniLoadMore} from '@dcloudio/uni-ui' // uniIcon,
+    import uniLoadMore from '@/components/uniui/lib/uni-load-more/uni-load-more' // uniIcon,
     
     export default {
         components: {

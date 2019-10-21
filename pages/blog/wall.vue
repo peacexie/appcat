@@ -22,7 +22,7 @@
 <script>
     
 	import incWall from '@/components/incs/incWall.vue'
-    import {uniLoadMore} from '@dcloudio/uni-ui' // uniIcon,
+    import uniLoadMore from '@/components/uniui/lib/uni-load-more/uni-load-more' // uniIcon,
 
 	export default {
 		components: {

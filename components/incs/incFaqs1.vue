@@ -23,7 +23,7 @@
                 
 <script>
     
-    import {uniIcon} from '@dcloudio/uni-ui' // uniIcon,
+    import uniIcon from '@/components/uniui/lib/uni-icon/uni-icon'
     
 	export default {
         components: {

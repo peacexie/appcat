@@ -1,7 +1,7 @@
 <template>
 	<view class="loginCon">
  		<view class="loginLog">
-			<image src="../../static/logo.png"></image>
+			<image :src="$tool.vpic(['h5','logo/logo.png'])"></image>
 		</view>
 		<view class="loginInputBox">
 			<view class="loginList">
@@ -28,7 +28,8 @@
 </template>
 
 <script>
-	import {uniIcon} from '@dcloudio/uni-ui'
+
+    import uniIcon from '@/components/uniui/lib/uni-icon/uni-icon'
 	import {mapMutations} from 'vuex'
 	export default {
 		components: {uniIcon},

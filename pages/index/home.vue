@@ -19,7 +19,7 @@
         <view class="page-section swiper swbox">
             <view class="page-section-spacing">
                 <swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" 
-                    :interval="interval" :duration="duration"> 
+                    :interval="interval" :duration="duration">
                     <swiper-item v-for="(row,index) in cargo" :key="index" @tap="$tool.go(row)">
                         <image class="swpPics" mode="aspectFit" 
                             :src="$tool.vpic([row.mpic,'demo_120x90.jpg'])"></image>  
@@ -30,7 +30,7 @@
         </view>
                 
         <view class='home-grid'>
-            <view>
+            <view v-if="modNavs.length>0">
                 <uni-grid :options="modNavs" @click="goMod" type="oblong"/>
             </view>
         </view>

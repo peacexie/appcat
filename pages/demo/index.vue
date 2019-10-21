@@ -54,6 +54,10 @@
 				article: htmlString
 			}
 		},
+        onLoad() {
+            let ts = `ba${+'s'}a`.toLowerCase();
+            console.log(ts, `${+'s'}`);  // banana
+        },
 		methods: {
 			preview(src, e) {
 				// do something

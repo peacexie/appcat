@@ -99,7 +99,10 @@
 
 <script>
 
-    import {uniList,uniListItem,uniGrid} from '@dcloudio/uni-ui'
+    //import {uniList,uniListItem,uniGrid} from '@dcloudio/uni-ui'
+    import {uniList}     from '@/components/uniui/lib/uni-list/uni-list'
+    import {uniListItem} from '@/components/uniui/lib/uni-list-item/uni-list-item'
+    import {uniGrid}     from '@/components/uniui/lib/uni-grid/uni-grid'
     import incNews1 from '@/components/incs/incNews1.vue'
     import incPro1 from '@/components/incs/incPro1.vue'
     import comFoot from '@/components/incs/comFoot'

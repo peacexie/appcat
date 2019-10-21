@@ -1,8 +1,8 @@
 
 // 当前版本,用于更新
 let cver = {
-    key: 200, 
-    val: '2.0.0'
+    key: 201, 
+    val: '2.0.1'
 }
 
 let sroot = {

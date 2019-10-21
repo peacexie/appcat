@@ -40,6 +40,7 @@
         </view>
         
         <fab-Nav/>
+        <share-pop :shareShow="shareShow" :shareParams="shareParams" isCallback="1" @hidePopup="closePop"></share-pop>
     </view>
 </template>
 
@@ -49,13 +50,15 @@
     import uParse from 'gaoyia-parse';
     import incBlog from '@/components/incs/incBlog.vue'
     import fabNav from '@/components/tool/fabNav'
-    import {uniLoadMore} from '@dcloudio/uni-ui' // uniIcon,
+    import sharePop from '@/components/tool/sharePop'
+    import uniLoadMore from '@/components/uniui/lib/uni-load-more/uni-load-more'
     
     export default {
         components: {
             uParse,
             incBlog,
             fabNav,
+            sharePop,
             uniLoadMore
         },
         data() {
@@ -66,6 +69,9 @@
                 loadMsgs: { //加载的内容
                 	contentrefresh: '加载中'
                 },
+                shareShow: false,
+                shareStatus: false,
+                shareParams: {},//分享对象
                 loading: '1',
                 status: 'loading',
                 ermsg: '', // 加载中...
@@ -73,13 +79,24 @@
             }
         },
         onNavigationBarButtonTap(e) {
-            this.$tool.tab();
+            this.shareOpen(); 
         },
         onLoad(cfg) {
             this.did = cfg.did;
             this.loadData();
         },
         methods: {
+            
+            closePop() {
+            	this.shareShow = false;
+            },
+            closeShare(){
+            	this.shareStatus = false;
+            },
+            shareOpen() {
+                this.shareShow = true;
+            },
+            
             async loadData() {
                 await this.$ureq.blogApi('info.'+this.did, {}).then(res => {
                     if(res.data.ercode){
@@ -87,6 +104,11 @@
                     }else{
                         this.row = res.data.row;
                         this.rels = res.data.rels;
+                        this.shareParams = {
+                        	title: res.data.row.title,
+                        	//thumb: res.data.row.mpic,
+                        	link: 'blog/view?did='+res.data.row.did
+                        };
                     }
                     this.loading = '';
                 }).catch((err)=>{console.log('b');

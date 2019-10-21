@@ -22,7 +22,7 @@
 <script>
     
 	import incNews2 from '@/components/incs/incNews2.vue'
-    import {uniLoadMore} from '@dcloudio/uni-ui' // uniIcon,
+    import uniLoadMore from '@/components/uniui/lib/uni-load-more/uni-load-more'
 
 	export default {
 		components: {
@@ -136,7 +136,7 @@
     #tab-bar .active {
     	color: #007AFF;
     }
-    .swiper-tab-list{ border-left:1px solid #CCC;}
+    .swiper-tab-list{ display:inline-block !important; border-left:1px solid #CCC;}
     .swiper-tab-list:first-child{ border-left:0;}
 	.uni-tab-bar-loading {
 		text-align: center;
