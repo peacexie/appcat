@@ -85,6 +85,17 @@
             this.did = cfg.did;
             this.loadData();
         },
+        // #ifdef MP
+        onShareAppMessage(res) {
+        	if (res.from === 'menu') {// 来自右上角分享按钮
+        		uni.showToast({title:'分享成功', icon:'none'});
+        	}
+        	return {
+        		title: this.shareParams.title, // imageUrl,desc
+        		path: '/pages/'+this.shareParams.link
+        	}
+        },
+        // #endif
         methods: {
             
             closePop() {

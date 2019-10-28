@@ -35,17 +35,19 @@ window.addEventListener('resize', function(){
 .navp3 li.dis{ cursor:help; color:#999; border-bottom:1px solid #DDD; }
 .onep{ text-align:center; padding:1rem; }
 .onep li{ list-style:none; display:inline-block; padding:1rem; }
-.onep img{ max-width:240px; max-height:240px; }
+.onep img, .onep div.img{ max-width:240px; max-height:240px; line-height:180%; }
 .pics{ display:flex; }
 .rem, .rem2{ text-align:left; color:#F00; font-size:small; }
 .rem2{ color:#666; }
 .pics .pic1{ width:33%; padding:0.5rem; }
-.title{ font-size:large; font-weight:bold; padding:0.5rem; border-bottom:1px solid #DDD; }
-.tsub{ font-size:large; font-weight:bold; padding:0 0.5rem; margin:0; text-align:left; }
+.title{ font-size:large; font-weight:bold; padding:0.5rem; border-bottom:1px solid #EEE; }
+.tsub{ font-size:large; font-weight:bold; padding:0 0.5rem; margin:1.5rem 0 0 0; text-align:left; border-bottom:1px solid #EEE; }
 @media only screen and (max-width:480px){
     .gap{ display:none !important; }
 } 
-.foot{ max-width:720px; background:#EEE; padding:1rem 0; margin:1rem auto 1rem auto; border-top:1px solid #CCC; }
+.lint{ border-top:1px solid #999; }
+.linb{ border-bottom:1px solid #999; }
+.foot{ max-width:720px; background:#EEE; padding:1rem 0; margin:1rem auto 1rem auto; border-top:1px solid #999; }
 </style>
 </head>
 <body>
@@ -65,13 +67,12 @@ window.addEventListener('resize', function(){
 
 <div class="clear"></div>
 
-<div class="outnp">
+<div class="outnp linb">
 
   <nav class="navp3">
     <li class="act" title="Wap">Wap</li>
     <li class="" title="微信小程序，支付宝小程序，百度小程序，头条小程序">小程序</li>
     <li class="" title="App">App</li>
-    <li class="" title="呐喊">呐喊?</li>
   </nav>
 
   <div class="onep" style="display:block">
@@ -96,23 +97,47 @@ window.addEventListener('resize', function(){
         <img class="barcode-image" src="./pc/mp-wx.jpg" alt="二维码(wx)">
         <br>(稳定-较旧)
       </li>
+      <p>微信扫码打开</p>
       <p class="rem">
-        部分外部页面错误信息：“不支持打开非业务域名请重新配置"；
-        因个人小程序号不允许设置业务域名导致。
+        部分外部页面错误信息：“不支持打开非业务域名请重新配置"；因个人小程序号不允许设置业务域名导致。<br>
+        [2019-10-23]审核：你的小程序当前页面涉及个人小程序未允许内容：文娱-资讯。
       </p>
     </div>
     <div>
       <p class="tsub">百度小程序</p>
-      <p class="rem">
-        百度小程序：本地已经调试好；<br>
-        但是个人身份申请不到appid，不能发布？！...
+      <li>
+        <img class="barcode-image" src="./pc/mp-bd1.png" alt="二维码(bd)">
+        <br>(较新-体验版)
+      </li>
+      <li>
+        <img class="barcode-image" src="./pc/mp-bd2.png" alt="二维码(bd)">
+        <br>(稳定-较旧)
+      </li>
+      <p>百度APP扫码打开</p>
+      <p class="rem2">
+        感谢`寄语秋枫`提供appid(需要企业身份申请)...<br>
+        小程序名称设置 `Imcat•全端猫` 提示：该名称涉及品牌或商标，请更换名称或提交相应材料进行审核
+      </p>
+      <p class="rem2">
+        业务域名 不支持IP地址及端口号，设置后生效需要一段时间。<br>
       </p>
     </div>
     <div>
       <p class="tsub">支付宝小程序</p>
+      <li>
+        <img class="barcode-image" src="./pc/mp-ali1.jpg" alt="二维码(ali)">
+        <br>(较新-体验版)
+      </li>
+      <li>
+        <div class="img">
+          【提交审核尝试】<br>
+          页面异常，页面加载不出来: 我的-至简生活、家族树、贴心口袋、等页面显示“页面访问受限”，请优化（iPhone8p）
+        </div>   
+        <br>(稳定-较旧)
+      </li>
       <p class="rem">
-        支付宝小程序：本地已经调试好；<br>
-        appid申请中...
+        `页面访问受限`：`H5 白名单流程` 目前仅支持企业小程序，不支持个人小程序使用。<br>
+        域名仅支持 https 开头的链接，不支持IP地址及端口号。
       </p>
     </div>
   </div>
@@ -129,7 +154,10 @@ window.addEventListener('resize', function(){
     <p class="rem">因未上架到应用商店；如不能扫码下载，请点击文字链接，用浏览器打开下载...</p>
   </div>
 
-  <div class="onep" style="display:none">
+</div>
+
+<div class="clear"></div>
+<div class="outnp ">
 
     <div>
       <p class="tsub"><b>申明（部分已解决）：</b></p>
@@ -141,15 +169,14 @@ window.addEventListener('resize', function(){
       </p>
     </div>
     <div>
-      <p class="tsub">源码与发布 (DIY)</p>
+      <p class="tsub">源码与发布 (DIY)</p> 
       <p class="rem2">
-        Github下载：<a href="https://github.com/peacexie/appcat" target="_blank">/peacexie/appcat</a>；
-        部署参考文档：<a href="https://uniapp.dcloud.io/" target="_blank">Uni-app</a>；<br>
-        自行下载,参考文档申请替换相关appid/appkey等配置；自替换图标和服务端配置`/common/cfgs.js`；自定上传打包上架应用…
+        Github下载：<a href="https://github.com/peacexie/appcat" target="_blank">`Imcat•全端猫`源码</a>；<br>
+        部署参考文档：<a href="https://uniapp.dcloud.io/" target="_blank">Uni-app（Vue.js）框架</a>；<br>
+        IDE打包发布工具：<a href="https://www.dcloud.io/hbuilderx.html" target="_blank">HBuilderX</a>；<br>
+        自行下载、配置、编译、打包、上传、发布、上架应用…
       </p>
     </div>
-
-  </div>
 
 </div>
 

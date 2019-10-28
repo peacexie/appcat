@@ -47,13 +47,24 @@ export default {
         plus.nativeUI.closeWaiting();
         // #endif
     },
+    // #ifdef MP
+    onShareAppMessage(res) {
+    	if (res.from === 'menu') {// 来自右上角分享按钮
+    		uni.showToast({title:'分享成功', icon:'none'});
+    	}
+    	return {
+    		title: 'Imcat•全端猫', // imageUrl,desc
+    		path: '/pages/index/home'
+    	}
+    },
+    // #endif
     methods: {
         vpic(fp) { 
             return this.$tool.vpic(['h5','icob/mod-'+fp+'.png'])
         },
         showGrid(){
             this.modNavs = [
-                {nid:12, text:'资讯',   image:this.vpic('1info'), path:'news/home'},
+                {nid:12, text:'博文',   image:this.vpic('1info'), path:'news/home'},
                 {nid:14, text:'产品',   image:this.vpic('2pro'),  path:'pro/home', cls:'uni-text-gray' },
                 {nid:16, text:'问答',   image:this.vpic('3faqs'), path:'faqs/list'},
                 {nid:22, text:'博客',   image:this.vpic('boke'),  path:'index/read?md=pro-blog&title=博客'},

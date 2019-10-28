@@ -49,18 +49,18 @@
         }, {
             "path": "pages/news/home",
             "style": {
-                "navigationBarTitleText": "新闻首页"
+                "navigationBarTitleText": "技术博客"
             }
         }, {
             "path": "pages/news/list",
             "style": {
                 "enablePullDownRefresh": true,
-                "navigationBarTitleText": "新闻列表"
+                "navigationBarTitleText": "文章列表"
             }
         }, {
             "path": "pages/news/view",
             "style": {
-                "navigationBarTitleText": "新闻详情",
+                "navigationBarTitleText": "文章详情",
                 "app-plus": {
                     "titleNView": {
                         "buttons": [{
@@ -80,7 +80,7 @@
             "path": "pages/blog/list",
             "style": {
                 "enablePullDownRefresh": true,
-                "navigationBarTitleText": "博文列表"
+                "navigationBarTitleText": "文章列表"
             }
         }, {
             "path": "pages/blog/wall",
@@ -91,7 +91,7 @@
         }, {
             "path": "pages/blog/view",
             "style": {
-                "navigationBarTitleText": "博文详情",
+                "navigationBarTitleText": "文章详情",
                 "app-plus": {
                     "titleNView": {
                         "buttons": [{

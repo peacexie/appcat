@@ -51,7 +51,7 @@
         
         <view class="title">
             <view class="more" @tap="$tool.nav('news/home')">More</view>
-            热门资讯
+            热门博文
         </view>
         <view class="uni-list">
             <inc-news1 v-for="(row,k2) in news" @click="goRow(row,'news')" :key="k2" :row="row"></inc-news1>
