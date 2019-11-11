@@ -64,7 +64,7 @@ export default {
         },
         showGrid(){
             this.modNavs = [
-                {nid:12, text:'博文',   image:this.vpic('1info'), path:'news/home'},
+                {nid:12, text:'文章',   image:this.vpic('1info'), path:'news/home'},
                 {nid:14, text:'产品',   image:this.vpic('2pro'),  path:'pro/home', cls:'uni-text-gray' },
                 {nid:16, text:'问答',   image:this.vpic('3faqs'), path:'faqs/list'},
                 {nid:22, text:'博客',   image:this.vpic('boke'),  path:'index/read?md=pro-blog&title=博客'},

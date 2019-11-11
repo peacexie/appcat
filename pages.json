@@ -49,7 +49,7 @@
         }, {
             "path": "pages/news/home",
             "style": {
-                "navigationBarTitleText": "技术博客"
+                "navigationBarTitleText": "技术文章"
             }
         }, {
             "path": "pages/news/list",
@@ -80,7 +80,7 @@
             "path": "pages/blog/list",
             "style": {
                 "enablePullDownRefresh": true,
-                "navigationBarTitleText": "文章列表"
+                "navigationBarTitleText": "博文列表"
             }
         }, {
             "path": "pages/blog/wall",
@@ -91,7 +91,7 @@
         }, {
             "path": "pages/blog/view",
             "style": {
-                "navigationBarTitleText": "文章详情",
+                "navigationBarTitleText": "博文详情",
                 "app-plus": {
                     "titleNView": {
                         "buttons": [{
