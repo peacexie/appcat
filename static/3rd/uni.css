@@ -1434,7 +1434,7 @@ radio-group label, checkbox-group label{
     padding: 0 20rpx;
     position: relative;
     z-index: 101;
-    background: #EEEEEE; /**/
+    background: #E8E8E8; /**/
 }
 .uni-divider__line{
     background-color: #CCCCCC;
