@@ -47,7 +47,7 @@
 <script>
     
     //import marked from 'marked'
-    import uParse from 'gaoyia-parse';
+    import uParse from 'gaoyia-parse'; 
     import incBlog from '@/components/incs/incBlog.vue'
     import fabNav from '@/components/tool/fabNav'
     import sharePop from '@/components/tool/sharePop'
@@ -105,7 +105,7 @@
             	this.shareStatus = false;
             },
             shareOpen() {
-                this.shareShow = true;
+                this.shareShow = true; 
             },
             
             async loadData() {

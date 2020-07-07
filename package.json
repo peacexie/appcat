@@ -1,5 +1,5 @@
 {
-  "name": "Imcat•全端猫",
+  "name": "Imcat@全端猫",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
@@ -10,9 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "@dcloudio/uni-ui": "^0.0.8",
-    "gaoyia-parse": "^1.0.9",
-    "marked": "^0.7.0"
+    "gaoyia-parse": "^1.2.0",
+    "marked": "^1.1.0"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "Imcat•全端猫"
 }
