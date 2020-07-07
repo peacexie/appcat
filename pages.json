@@ -209,10 +209,10 @@
     "globalStyle": {
         "navigationBarTextStyle": "black", // black/white
         "navigationBarTitleText": "Hi-Cats",
-        "navigationBarBackgroundColor": "#E8E8E8", // F8F8F8
-        "backgroundColor": "#E8E8E8", // F8F8F8
-        "backgroundColorTop": "#E8E8E8", // F4F5F6: 仅 iOS 平台
-        "backgroundColorBottom": "#E8E8E8", // F4F5F6: 仅 iOS 平台
+        "navigationBarBackgroundColor": "#EEEEEE", // F8F8F8
+        "backgroundColor": "#EEEEEE", // F8F8F8
+        "backgroundColorTop": "#EEEEEE", // F4F5F6: 仅 iOS 平台
+        "backgroundColorBottom": "#EEEEEE", // F4F5F6: 仅 iOS 平台
         "mp-alipay": {
             "titleBarColor": "#FFFFFF"
         }
@@ -221,7 +221,7 @@
         "color": "#7A7E83",
         "selectedColor": "#007AFF",
         "borderStyle": "black",
-        "backgroundColor": "#E8E8E8", // F8F8F8
+        "backgroundColor": "#EEEEEE", // F8F8F8
         "list": [{
                 "pagePath": "pages/index/home",
                 "iconPath": "static/icob/nav-home.png",

@@ -30,7 +30,7 @@
 
 	/* 以下样式用于 hello uni-app 演示所需 */
 	page {
-		background-color: #E8E8E8; /*F4F5F6*/
+		background-color: #EEEEEE; /*F4F5F6*/
 		/*height: 100%;*/
         height: auto;
         min-height: 100%;
@@ -41,7 +41,7 @@
 	}
 
     .more{ display:inline-block; float:right; padding-left:0.5rem; }
-    .title {background:#E8E8E8; padding:20rpx; }
+    .title {background:#EEEEEE; padding:20rpx; }
     .dtit { display:block;
         font-size:18px; text-align:center; line-height:120%;
 		background:#FFF; padding:30rpx 0 !important; margin:0rpx;
