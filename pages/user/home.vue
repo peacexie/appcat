@@ -22,15 +22,15 @@
         </view>
 
         <view class="myTools"> 
-            <view class="myToolBox" @tap="$tool.go('url=https://im3n.txjia.com:6443/&title=至简生活')">
+            <view class="myToolBox" @tap="$tool.go('url=http://im3n.txjia.com/&title=至简生活')">
                 <image :src="$tool.vpic(['h5','icob/ex-jian.png'])"></image>
                 <text>至简生活</text>
             </view>
-            <view class="myToolBox" @tap="$tool.go('url=https://imblog.txjia.com:8443/home.php/ftree&title=家族树')">
+            <view class="myToolBox" @tap="$tool.go('url=http://imblog.txjia.com/home.php/ftree&title=家族树')">
                 <image :src="$tool.vpic(['h5','icob/ex-shu.png'])"></image>
                 <text>家族树</text>
             </view>
-            <view class="myToolBox" @tap="$tool.go('url=https://yscode.txjia.com/&title=贴心口袋')">
+            <view class="myToolBox" @tap="$tool.go('url=http://yscode.txjia.com/&title=贴心口袋')">
                 <image :src="$tool.vpic(['h5','icob/ex-kou.png'])"></image>
                 <text>贴心口袋</text>
             </view>
