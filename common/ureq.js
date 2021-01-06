@@ -3,7 +3,9 @@ import req from './request'
 import {apim,apib} from './cfgs'
 
 const initUrl = (act) => {
-    return '/sapi.php?ver='+ apim.ver + '&sk='+ apim.psk +'&mkv=' + act
+    let comp = 'ver='+ apim.ver + '&sk='+ apim.psk +'&_v=2020-0106';
+    return '/sapi.php/'+act+'?'+comp;
+    //return '/sapi.php?'+act+'&'+comp;
 }
 
 const commApi = (act, parm, method) => {
