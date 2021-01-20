@@ -7,9 +7,9 @@ let cver = {
 
 let sroot = {
     //jq: 'test'
-    h5: 'https://imcat.txjia.com/h5/',
-    favor: 'https://imcat.txjia.com/ximps/static/media/collect/',
-    basic: 'https://imcat.txjia.com/ximps/static/icons/basic/'
+    h5: 'http://txjia.com/h5/',
+    favor: 'http://txjia.com/ximps/static/media/collect/',
+    basic: 'http://txjia.com/ximps/static/icons/basic/'
 }
 
 // 聊天配置
@@ -20,13 +20,13 @@ let chat = {
 };
 
 let apib = {
-    url: 'https://imcat.txjia.com/root/run', // imblog,imcat
+    url: 'http://txjia.com/imcat/root/run', // imblog,imcat
     //url: 'http://127.0.0.1/peace/imcat/catmain/root/run', // imblog,catmain
     ver: 'nver',
     psk: 'api-OwNVO-IywfA-givEQ-zXTLt-LQtpf'
 };
 let apim = {
-    url: 'https://imcat.txjia.com/root/run',
+    url: 'http://txjia.com/imcat/root/run',
     //url: 'http://127.0.0.1/peace/imcat/catmain/root/run',
     ver: 'nver',
     psk: 'api-OwNVO-IywfA-givEQ-zXTLt-LQtpf'
