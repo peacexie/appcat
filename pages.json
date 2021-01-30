@@ -9,7 +9,7 @@
                         "buttons": [{
                             // #ifdef H5
                             "text": "\ue534",
-                            "fontSrc": "https://img-cdn-qiniu.dcloud.net.cn/fonts/uni.ttf",
+                            "fontSrc": "http://txjia.com/h5/3rd/uni.ttf?20210-130",
                             // #endif
                             // #ifdef APP-PLUS || MP
                             "text": ">",

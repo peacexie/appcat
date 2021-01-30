@@ -20,7 +20,8 @@ let chat = {
 };
 
 let apib = {
-    url: 'http://txjia.com/imcat/root/run', // imblog,imcat
+    url: 'http://txjia.com/blog/root/run', // imblog,imcat
+    //url: 'http://txjia.com/imcat/root/run', // imblog,imcat
     //url: 'http://127.0.0.1/peace/imcat/catmain/root/run', // imblog,catmain
     ver: 'nver',
     psk: 'api-OwNVO-IywfA-givEQ-zXTLt-LQtpf'

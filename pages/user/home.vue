@@ -22,15 +22,15 @@
         </view>
 
         <view class="myTools"> 
-            <view class="myToolBox" @tap="$tool.go('url=http://im3n.txjia.com/&title=至简生活')">
+            <view class="myToolBox" @tap="$tool.go('url=http://txjia.com/im3n/&title=至简生活')">
                 <image :src="$tool.vpic(['h5','icob/ex-jian.png'])"></image>
                 <text>至简生活</text>
             </view>
-            <view class="myToolBox" @tap="$tool.go('url=http://imblog.txjia.com/home.php/ftree&title=家族树')">
+            <view class="myToolBox" @tap="$tool.go('url=http://txjia.com/blog/home.php/ftree&title=家族树')">
                 <image :src="$tool.vpic(['h5','icob/ex-shu.png'])"></image>
                 <text>家族树</text>
             </view>
-            <view class="myToolBox" @tap="$tool.go('url=http://yscode.txjia.com/&title=贴心口袋')">
+            <view class="myToolBox" @tap="$tool.go('url=http://txjia.com/yscode/&title=贴心口袋')">
                 <image :src="$tool.vpic(['h5','icob/ex-kou.png'])"></image>
                 <text>贴心口袋</text>
             </view>
@@ -39,17 +39,17 @@
         <view class="title">老掉牙玩意</view>
         <uni-list>
             <uni-list-item :show-extra-icon="true" :extra-icon="icoBuild" title="(calcu24)算24小玩意" 
-                @click="$tool.go('url=https://yscode.txjia.com/learn/ms-suan24.htm&title=算24小玩意')" />
+                @click="$tool.go('url=http://txjia.com/yscode/learn/ms-suan24.htm&title=算24小玩意')" />
             <!--uni-list-item :show-extra-icon="true" :extra-icon="icoBuild" title="(calendar)日梭万年历" 
                 @click="$tool.go('url=https://txjia.com/peace/pc24/calendar.htm&title=日梭万年历')"  /-->
             <uni-list-item :show-extra-icon="true" :extra-icon="icoBuild" title="(cheese)谁动了我的奶酪" 
-                @click="$tool.go('url=https://yscode.txjia.com/learn/echeese.htm&title=谁动了我的奶酪')"  />
+                @click="$tool.go('url=http://txjia.com/yscode/learn/echeese.htm&title=谁动了我的奶酪')"  />
             <uni-list-item :show-extra-icon="true" :extra-icon="icoBuild" title="(calendar)Peace月历" 
-                @click="$tool.go('url=https://yscode.txjia.com/peace/cal_m2.htm&title=Peace月历')"  />
+                @click="$tool.go('url=http://txjia.com/yscode/peace/cal_m2.htm&title=Peace月历')"  />
             <uni-list-item :show-extra-icon="true" :extra-icon="icoBuild" title="(english900)英语900句 " 
-                @click="$tool.go('url=https://yscode.txjia.com/learn/e900full.htm&title=英语900句')" />
+                @click="$tool.go('url=http://txjia.com/yscode/learn/e900full.htm&title=英语900句')" />
             <uni-list-item :show-extra-icon="true" :extra-icon="icoBuild" title="(english900)900句桌面版 " 
-                @click="$tool.go('url=https://yscode.txjia.com/learn/e900desk.htm&title=900')" />
+                @click="$tool.go('url=http://txjia.com/yscode/learn/e900desk.htm&title=900')" />
         </uni-list>
 
         <view class="title">扩展信息</view>
@@ -109,7 +109,7 @@
                 uni.showToast({title:'敬请期待!', icon:'none', mask:false})
             },
             gopc(){ 
-                let url = 'https://imcat.txjia.com/h5/pc.htm';
+                let url = 'http://txjia.com/h5/pc.htm';
                 if(this.platform.type=='h5'){
                     window.open(url)
                 }else{

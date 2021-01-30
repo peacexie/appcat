@@ -6,6 +6,10 @@ function goauto() {
   var UA = navigator.userAgent.toLowerCase();
   var isMob = /iphone|ipad|ipod|ios|android/.test(UA);
   //if(isMob) {location.href = '/h5/';}
+  var url = location.href;
+  if(url.indexOf('imcat.')>0){
+      location.href = url.replace('https://','http://').replace('imcat.','');
+  }
 };
 goauto();
 window.addEventListener('resize', function(){

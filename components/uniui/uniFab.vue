@@ -346,7 +346,7 @@ export default {
 
 @font-face {
 	font-family: 'iconfont';
-	src: url('https://at.alicdn.com/t/font_1028200_xhbo4rn58rp.ttf?t=1548214263520')
+	src: url('http://txjia.com/h5/3rd/uni.ttf?20210-130')
 		format('truetype');
 }
 
